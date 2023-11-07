@@ -1,0 +1,1008 @@
+html {
+    overflow-x: hidden;
+}
+
+.margins {
+    padding: 0 10% 0 10%; 
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-family: garamond-premier-pro,serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 20px;
+}
+
+.ravenLogo {
+    width: 100%;
+    padding-top: 5%;
+}
+
+.grid {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr); 
+}
+
+.z-position {
+    position: absolute;
+    z-index: 1;
+}
+
+.mont {
+    font-family: montserrat,sans-serif;
+}
+
+.title {
+    font-size: 45px;
+}
+
+.header {
+    font-size: 50px;
+    margin-top: 0;
+    font-family: fairy-tale-jf,sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: #303030;
+    margin-bottom: 0.5rem;
+}
+
+#link {
+    color: brown;
+    text-decoration: underline;
+}
+
+#link:hover {
+    cursor: pointer;
+    color: rgb(84, 9, 9);
+}
+
+.gap2 {
+    padding-bottom: 4rem;
+}
+
+.mdSize {
+    font-size: 30px;
+}
+
+.full {
+    width: 100%;
+    grid-column-end: span 12;
+}
+
+.ten {
+    grid-column: 2 / 12;
+}
+
+.four {
+    grid-column: 2 / 6;
+}
+
+.five {
+    grid-column: 7 / 12;
+}
+
+.three {
+    grid-column: 2 / 5;
+}
+
+.six {
+    grid-column: 6 / 12;
+}
+
+.white {
+    color: white;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.hMdBlue {
+    color: #14A8CA;
+}
+
+.gBlue {
+    color: #0086F8;
+}
+
+.gRed {
+    color: #FF4131;
+}
+
+.gGreen {
+    color: #00AF56;
+}
+
+.sDrkBlue {
+    color: #023667;
+}
+
+.sLtBlue {
+    color: #18A7C2;
+}
+
+.sOrange {
+    background-color: #E84100;
+}
+
+.list {
+    margin-left: 20%;
+    display: flex;
+    justify-content: center;
+    list-style: none;
+}
+
+.listItm {
+    padding: 0 2rem;
+}
+
+.listItem {
+    margin: 0.5rem 0 1.5rem 0;
+    font-size: 18px;
+}
+
+.listHead {
+    margin: 1.5rem 0 0 0;
+    font-size: 26px;
+    font-weight: 600;
+}
+
+.listP {
+    margin: 0.5rem 0 2rem 0;
+}
+
+a {
+    text-decoration: none;
+    color: #535353;
+}
+
+header {
+    background: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    z-index: 3;
+}
+
+.headList {
+    list-style: none;
+    padding: 0;
+    text-align: right;
+}
+
+.headItem {
+    display: inline;
+    color: #535353;
+    margin-right: 2rem;
+    font-size: 24px;
+}
+
+.logo {
+    margin-left: 2rem;
+}
+
+.fa-chevron-down {
+    font-size: 2rem;
+    line-height: 2rem;
+    margin: 0.9rem 0;
+    grid-column-end: span 12;
+    padding: 30vh 3rem 1rem;
+    color: #303030;
+    font-weight: 600;
+    text-align: center;
+}
+
+.name, .info, .place:hover {
+    cursor: default;
+}
+
+.fa-chevron-down {
+    text-align: center;
+    font-size: 2rem;
+    color: rgba(0, 0, 0, 0.2);
+}
+
+.nameBox {
+    grid-column: 8 / 12;
+    margin-top: 75%;
+    margin-left: 2rem;
+}
+
+.name {
+    color: #08A4C8;
+    font-size: 55px;
+    margin: 0;
+    margin: 1rem;
+}
+
+.info {
+    font-size: 26px;
+    margin: 0;
+    margin: 0 1rem;
+}
+
+/* works style */
+
+.pic {
+    width: 100%;
+    border-radius: 30px;
+    margin-top: 2.5rem;
+    /*box-shadow: 0px 0px 10px rgba(0, 0, 0, 10);*/
+}
+
+.box {
+    grid-column: 3 / 11;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 0;
+    padding-right: 1rem;
+}
+
+.darkBlueBox:hover {
+    cursor: pointer;
+    box-shadow: 3px 3px 6px rgba(45, 87, 167, 0.5);
+    border-radius: 25px;
+    transform: translate(-3px, -3px);
+    animation-play-state: running;
+}
+
+.darkBlueBox {
+    margin-top: 4rem;
+    transition-duration: 0.5s;
+}
+
+.blueBox, .lightBlueBox {
+    transition-duration: 0.5s;
+}
+
+.blueBox:hover {
+    cursor: pointer;
+    box-shadow: 3px 3px 6px rgba(8, 164, 200, 0.5);
+    border-radius: 25px;
+    transform: translate(-3px, -3px);
+    animation-play-state: running;
+}
+
+.lightBlueBox:hover {
+    cursor: pointer;
+    box-shadow: 3px 3px 6px rgba(18, 121, 191, 0.5);
+    border-radius: 25px;
+    transform: translate(-3px, -3px);
+    animation-play-state: running;
+}
+
+.sheridanMain {
+    grid-column: 1 / 8;
+    position: relative;
+    box-shadow: none;
+}
+
+.sheridanText {
+    grid-column: 8 / 13;
+    padding: 2rem 0 3rem 1rem;
+}
+
+#up {
+    position: absolute;
+    z-index: 2;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    box-shadow: none;
+}
+
+#mid {
+    position: absolute;
+    z-index: 1;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    box-shadow: none;
+}
+
+#up2 {
+    position: absolute;
+    z-index: 2;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    box-shadow: none;
+}
+
+#mid2 {
+    position: absolute;
+    z-index: 1;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    box-shadow: none;
+}
+
+#up3 {
+    position: absolute;
+    z-index: 2;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    box-shadow: none;
+}
+
+#mid3 {
+    position: absolute;
+    z-index: 1;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    box-shadow: none;
+}
+
+
+.head {
+    font-size: 2rem;
+}
+
+
+@keyframes spin {
+  100% {transform: rotate(-5deg) translateY(-5px); }
+}
+
+@keyframes back {
+  100% {transform: rotate(5deg) translateY(5px); }
+}
+
+@keyframes scale {
+  100% {transform: scale(1.05); }
+}
+
+@keyframes scaled {
+  100% {transform: scale(0.95); }
+}
+
+.darkBlueText {
+    color: #2D57A7;
+}
+
+.jellyfishMain {
+    grid-column: 7 / 13;
+    padding: 2rem 1rem 0 0;
+    position: relative;
+}
+
+.jellyfishText {
+    grid-column: 1 / 6;
+    padding: 6rem 0 5rem 3rem;
+}
+
+.blueText {
+    color: #08A4C8;
+}
+
+.googleMain {
+    grid-column: 1 / 7;
+    padding: 2rem 0 0 1rem;
+    position: relative;
+}
+
+.googleText {
+    grid-column: 8 / 13;
+    padding: 4rem 1rem 3rem 0;
+}
+
+.lightBlueText {
+    color: #1279BF;
+}
+
+.fas {
+    font-size: 2.3rem;
+}
+
+
+/*----------------------------About Page----------------------------*/
+
+.solid {
+    height: 0.35rem;
+    width: 93%;
+    background-color: #08A4C8;
+    border: none;
+    border-radius: 30px;
+    margin: 0;
+    margin-top: 15rem;
+}
+
+.dotted {
+    border: 0.4rem;
+    border-top-style: dotted;
+    border-color: #08A4C8;
+    margin: 0;
+    width: 95%;
+    padding-bottom: 0.5rem;
+    margin-top: 15rem;
+}
+
+.me {
+    grid-column: 1 / 6;
+    margin-top: 10%;
+    padding: 5% 0 5% 20%;
+
+}
+
+div.aboutBody {
+    margin-top: 17%;
+    grid-column: 7 / 12;
+    align-self: center;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+
+
+/*----------------------------Sheridan Case Study----------------------------*/
+
+.sherTransition {
+    grid-column-end: span 12;
+    width: calc(100% + 30%); 
+    margin: 0 0 0 -15%; 
+}
+
+.title {
+    font-size: 40px;
+}
+
+.sTitleBox {
+    grid-column: 1 / 7;
+    margin: 40% 0 0 13%;
+    padding-right: 1rem;
+}
+
+.sBar {
+    background-color: #08A4C8;
+    margin: 5rem 0 12rem -15%;
+    padding-right: 30%;
+}
+
+.viewBtn {
+    border: solid #E84100 3px;
+    width: 9rem;
+    text-align: center; 
+}
+
+.sResearch, .sIdeation, .sPrototyping {
+    border: solid #023667 3px;
+    width: 6.2rem;
+    text-align: center;
+    background-color: white;
+
+}
+
+.sCaseNav {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    padding: 5.5rem 0 0.5rem 0;
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    font-size: 20px;
+    grid-column: 2 / 8;
+}
+
+.sBtn {
+    border-radius: 50px;
+    padding: 0.2rem 1rem;
+}
+
+.viewContainer {
+    display: flex;
+    flex-direction: row-reverse;
+    list-style: none;
+    padding: 0;
+    padding: 5.5rem 0 0.5rem 0;
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    font-size: 20px;
+    grid-column: 8 / 12;
+}
+
+.winner {
+    font-weight: 800;
+    font-size: 23px;
+    margin-bottom: 2rem;
+}
+
+.smGap {
+    margin-top: 5rem;
+}
+
+.noMargin {
+    margin: 0;
+}
+
+.subHead {
+    margin: 0.5rem 0 0 0;
+    font-weight: 600;
+}
+
+
+
+/*----------------------------Jellyfish Case Study----------------------------*/
+
+.jDrkBlue {
+    color: #024D6A;
+}
+
+.jLtBlue {
+    background-color: #2491B8;
+}
+
+.jBar {
+    background-color: #024D6A;
+    margin: 10rem 0 2rem -15%;
+    padding-right: 30%;
+}
+
+.problemBubbles {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.problemItm {
+    border-radius: 50rem;
+    width: 11rem;
+    padding: 2rem 3rem;
+}
+
+.jviewBtn {
+    border: solid #2491B8 3px;
+    width: 9rem;
+    text-align: center; 
+}
+
+.jCode {
+    background-color: rgb(35, 158, 201, 0.24);
+    padding: 0.5rem 1.5rem 2rem 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.gitBtn {
+    background-color: #024D6A;
+    border-color: #024D6A;
+}
+
+.gitBtn:hover {
+    background-color: #2491B8;
+    border-color: #2491B8;
+}
+
+.github {
+    margin-left: 0.2rem;
+    margin-top: 1.5rem;
+}
+
+.bold {
+    font-weight: 600;
+}
+
+.codeImg {
+    margin: 1em 0;
+}
+
+
+/*----------------------------Google Doodle Case Study----------------------------*/
+
+.googleBg {
+    position: absolute;
+    top: -50px;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+.gTitleBox {
+    grid-column: 1 / 6;
+    margin: 50% 0 0 15%;
+    padding-right: 1rem;
+}
+
+.googleMockupImg {
+    margin-top: 30%;
+}
+
+.gBar {
+    background-color: #303030;
+    margin-left: -15%;
+    padding-right: 30%;
+}
+
+.caseNav {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    padding: 5.5rem 0 0.5rem 0;
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 0;
+    font-size: 20px;
+}
+
+.caseNavItm {
+    margin-right: 1rem;
+}
+
+.gResearch {
+    border: solid #FF4131 3px;
+    width: 6rem;
+    text-align: center;
+    background: white;
+}
+
+.gDesign {
+    border: solid 3px #0086F8;
+    width: 6rem;
+    text-align: center;
+    background: white;
+}
+
+.gAnimation {
+    border: solid 3px #00AF56;
+    width: 6rem;
+    text-align: center;
+    background: white;
+}
+
+.btn {
+    border-radius: 50px;
+    padding: 0.2rem 1.5rem;
+    font-weight: 600;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.gap {
+    margin-top: 8rem;
+}
+
+.headerBox {
+    grid-column-end: span 12;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+}
+
+.overlay {
+    display: none;
+}
+
+.mobileNav {
+    display: none;
+}
+
+
+
+/*----------------------------Mobile Design----------------------------*/
+
+@media screen and (max-width: 800px) {
+
+    body {
+        font-size: 16px;
+    }
+
+    .mTwelve {
+        grid-column: 1 / 13;
+    }
+
+    .gap {
+        margin: 0;
+        padding: 0;
+    }
+
+    .mobileFlex {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: flex-start;
+    }
+
+
+    .title {
+        font-size: 36px;
+    }
+
+    .header {
+        font-size: 30px;
+    }
+
+    .topnav a:not(:first-child) {display: none;}
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+
+    .gTitleBox, .sTitleBox {
+        margin: 0;
+        text-align: center;
+        padding: 0;
+    }
+
+    .gTitle {
+        margin-top: 0;
+    }
+
+    header {
+        display: none;
+    }
+
+    .overlay {
+        display: block;
+        height: 0%;
+        width: 100%;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 8, 31, 0.9);
+        overflow-y: auto;
+        transition: 0.5s;
+      }
+      
+      .overlay-content {
+        position: relative;
+        top: 25%;
+        width: 100%;
+        text-align: center;
+        margin-top: 30px;
+      }
+      
+      .overlay a {
+        padding: 8px;
+        text-decoration: none;
+        font-size: 24px;
+        color: rgb(224, 224, 224);
+        display: block;
+        transition: 0.3s;
+      }
+      
+      .overlay a:hover, .overlay a:focus {
+        color: #f1f1f1;
+      }
+      
+      .overlay .closebtn {
+        position: absolute;
+        top: 15px;
+        right: 35px;
+        font-size: 40px;
+      }
+
+      .mobileNav {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        background: white;
+        position: fixed;
+        top: 0;
+        left: 0%;
+        width: 100%;
+        z-index: 4;
+    }
+
+    .logo {
+        padding: 1rem;
+        font-size: 24px;
+        margin: 0;
+    }
+
+    .hamburger {
+        margin: 0.5rem 1rem 1rem 0;
+        text-align: right;
+    }
+
+    .caseNav {
+        display: none;
+    }
+
+    .gBarList {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding-top: 1rem;
+    }
+      
+    .listHead {
+        font-weight: 20px;
+        margin: 0;
+    }
+
+    .googleBg {
+        top: 50px;
+    }
+
+    .header {
+        margin-top: 4rem;
+    }
+
+    .hide {
+        overflow-x: hidden;
+    }
+
+    .none {
+        display: none;
+    }
+
+    .problemBubbles {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .problemItm {
+        margin-bottom: 1rem;
+        padding: 1rem;
+    }
+
+    .noMargin {
+        margin: 0;
+    }
+
+    a.otherRight, a.otherLeft {
+        grid-column: 1 / 3;
+    }
+
+    a.otherLeft {
+        margin-bottom: 3rem;
+    }
+
+    div.otherWorksBox {
+        margin-bottom: 4rem;
+    }
+
+    div.jBar {
+        margin-top: 5rem;
+    }
+
+    .jTitle {
+        margin: 2rem 0 1rem 0;
+    }
+
+    .jDescription {
+        margin: 0 0 2rem 0;
+    }
+
+    .mGap {
+        margin-top: 4rem;
+    }
+
+    .sBar {
+        margin-bottom: 3rem;
+    }
+
+    .mText {
+        margin-top: 0;
+    }
+
+    .nameBox {
+        text-align: center;
+        margin: 30rem 0 0 0;
+    }
+    
+    .info {
+        font-size: 20px;
+    }
+    
+    .fa-chevron-down {
+        padding-top: 2rem;
+    }
+    
+    .darkBlueBox, .blueBox, .lightBlueBox {
+        margin: 0 10% 0 10%;
+        padding: 0;
+    }
+    
+    .sheridanText, .googleText, .jellyfishText {
+        padding: 0;
+    }
+    
+    .lightBlueText, .blueText, .darkBlueText {
+        text-align: center;
+    }
+
+    .me {
+        padding: 0;
+        padding-top: 2rem;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+  }
+
+  /* Other Works */
+
+  .otherRight, .otherLeft {
+      display: flex;
+      flex-direction: row;
+  }
+
+  .otherRight:hover, .otherLeft:hover {
+    color: #14A8CA;
+}
+
+  .otherRight {
+      grid-column: 2 / 3;
+      justify-content: right;
+  }
+
+  .headR, .headL {
+      font-size: 28px;
+      margin: 0 0.8rem;
+  }
+  
+
+  .arrow {
+      font-size: 33px;
+  }
+
+.otherWorks {
+      display: grid;
+      grid-template-columns: 1fr 1fr; 
+      padding: 3rem 0;
+  }
+
+.otherWorksBox {
+    display: grid;
+    padding: 0 10% 0 10%;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-end: span 12;
+    background-color: #F6F6F6;
+    box-shadow: inset 0 8px 10px rgba(0, 0, 0, 0.2);
+    margin: 8rem 0;
+}
+
+/*footer*/
+
+footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    padding: 0 1rem 0 0;
+}
+
+.icon {
+    float: right;
+    margin-right: 1rem;
+    font-size: 20px;
+}
+
+.mail {
+   font-size: 2px; 
+}
+
+
+/* playgound */
+
+.gallery {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    max-height: 170rem;
+}
+
+.galleryItem {
+    flex-basis: 50%;
+    flex-grow: 1;
+    width: 35vw;
+}
+
+
